@@ -9,13 +9,22 @@ int Number2 = int.Parse(Console.ReadLine()!);
 Console.Write ("Введите третье число: ");
 int Number3 = int.Parse(Console.ReadLine()!);
 
-int max = Number1
+int max = 0;
 
-if (max>Number2)
+if (Number1>Number2)
 {
-    Console.Write ($"max = {Number1}");
+    max = Number1;
 }
 else
 {
-    Console.Write ($"max = {Number2}");
+    max = Number2;
+}
+if (max > Number3)
+{
+    Console.Write ($"max = {max}");
+}
+else
+{
+    max = Number3;
+    Console.Write ($"max = {max}");
 }
